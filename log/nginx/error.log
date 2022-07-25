@@ -1,0 +1,681 @@
+2022/07/23 20:43:30 [notice] 1#1: using the "epoll" event method
+2022/07/23 20:43:30 [notice] 1#1: nginx/1.23.1
+2022/07/23 20:43:30 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/23 20:43:30 [notice] 1#1: OS: Linux 5.10.76-linuxkit
+2022/07/23 20:43:30 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/23 20:43:30 [notice] 1#1: start worker processes
+2022/07/23 20:43:30 [notice] 1#1: start worker process 25
+2022/07/23 20:43:30 [notice] 1#1: start worker process 26
+2022/07/23 20:43:30 [notice] 1#1: start worker process 27
+2022/07/23 20:43:30 [notice] 1#1: start worker process 28
+2022/07/23 20:43:30 [notice] 1#1: start worker process 29
+2022/07/23 20:43:30 [notice] 1#1: start worker process 30
+2022/07/23 20:43:43 [error] 25#25: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/23 20:44:47 [error] 25#25: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/23 20:44:48 [error] 25#25: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/23 20:44:48 [error] 25#25: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/23 20:44:48 [error] 25#25: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/23 20:46:21 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/23 20:46:21 [notice] 25#25: gracefully shutting down
+2022/07/23 20:46:21 [notice] 26#26: gracefully shutting down
+2022/07/23 20:46:21 [notice] 26#26: exiting
+2022/07/23 20:46:21 [notice] 27#27: gracefully shutting down
+2022/07/23 20:46:21 [notice] 27#27: exiting
+2022/07/23 20:46:21 [notice] 29#29: gracefully shutting down
+2022/07/23 20:46:21 [notice] 30#30: gracefully shutting down
+2022/07/23 20:46:21 [notice] 30#30: exiting
+2022/07/23 20:46:21 [notice] 28#28: gracefully shutting down
+2022/07/23 20:46:21 [notice] 25#25: exiting
+2022/07/23 20:46:21 [notice] 26#26: exit
+2022/07/23 20:46:21 [notice] 27#27: exit
+2022/07/23 20:46:21 [notice] 29#29: exiting
+2022/07/23 20:46:21 [notice] 30#30: exit
+2022/07/23 20:46:21 [notice] 28#28: exiting
+2022/07/23 20:46:21 [notice] 25#25: exit
+2022/07/23 20:46:21 [notice] 29#29: exit
+2022/07/23 20:46:21 [notice] 28#28: exit
+2022/07/23 20:46:21 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2022/07/23 20:46:21 [notice] 1#1: worker process 26 exited with code 0
+2022/07/23 20:46:21 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/23 20:46:21 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2022/07/23 20:46:21 [notice] 1#1: worker process 27 exited with code 0
+2022/07/23 20:46:21 [notice] 1#1: worker process 28 exited with code 0
+2022/07/23 20:46:21 [notice] 1#1: worker process 29 exited with code 0
+2022/07/23 20:46:21 [notice] 1#1: worker process 30 exited with code 0
+2022/07/23 20:46:21 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/23 20:46:21 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/07/23 20:46:21 [notice] 1#1: worker process 25 exited with code 0
+2022/07/23 20:46:21 [notice] 1#1: exit
+2022/07/23 20:47:49 [notice] 1#1: using the "epoll" event method
+2022/07/23 20:47:49 [notice] 1#1: nginx/1.23.1
+2022/07/23 20:47:49 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/23 20:47:49 [notice] 1#1: OS: Linux 5.10.76-linuxkit
+2022/07/23 20:47:49 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/23 20:47:49 [notice] 1#1: start worker processes
+2022/07/23 20:47:49 [notice] 1#1: start worker process 24
+2022/07/23 20:47:49 [notice] 1#1: start worker process 25
+2022/07/23 20:47:49 [notice] 1#1: start worker process 26
+2022/07/23 20:47:49 [notice] 1#1: start worker process 27
+2022/07/23 20:47:49 [notice] 1#1: start worker process 28
+2022/07/23 20:47:49 [notice] 1#1: start worker process 29
+2022/07/23 20:47:55 [error] 24#24: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/23 20:48:40 [error] 24#24: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/23 20:48:41 [error] 24#24: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/23 20:52:13 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/23 20:52:13 [notice] 27#27: gracefully shutting down
+2022/07/23 20:52:13 [notice] 24#24: gracefully shutting down
+2022/07/23 20:52:13 [notice] 24#24: exiting
+2022/07/23 20:52:13 [notice] 28#28: gracefully shutting down
+2022/07/23 20:52:13 [notice] 28#28: exiting
+2022/07/23 20:52:13 [notice] 26#26: gracefully shutting down
+2022/07/23 20:52:13 [notice] 26#26: exiting
+2022/07/23 20:52:13 [notice] 25#25: gracefully shutting down
+2022/07/23 20:52:13 [notice] 25#25: exiting
+2022/07/23 20:52:13 [notice] 29#29: gracefully shutting down
+2022/07/23 20:52:13 [notice] 29#29: exiting
+2022/07/23 20:52:13 [notice] 27#27: exiting
+2022/07/23 20:52:13 [notice] 24#24: exit
+2022/07/23 20:52:13 [notice] 28#28: exit
+2022/07/23 20:52:13 [notice] 26#26: exit
+2022/07/23 20:52:13 [notice] 25#25: exit
+2022/07/23 20:52:13 [notice] 29#29: exit
+2022/07/23 20:52:13 [notice] 27#27: exit
+2022/07/23 20:52:13 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2022/07/23 20:52:13 [notice] 1#1: worker process 24 exited with code 0
+2022/07/23 20:52:13 [notice] 1#1: worker process 25 exited with code 0
+2022/07/23 20:52:13 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/23 20:52:13 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2022/07/23 20:52:13 [notice] 1#1: worker process 26 exited with code 0
+2022/07/23 20:52:13 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/23 20:52:13 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2022/07/23 20:52:13 [notice] 1#1: worker process 27 exited with code 0
+2022/07/23 20:52:13 [notice] 1#1: worker process 29 exited with code 0
+2022/07/23 20:52:13 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/23 20:52:13 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2022/07/23 20:52:13 [notice] 1#1: worker process 28 exited with code 0
+2022/07/23 20:52:13 [notice] 1#1: exit
+2022/07/23 20:52:13 [notice] 1#1: using the "epoll" event method
+2022/07/23 20:52:13 [notice] 1#1: nginx/1.23.1
+2022/07/23 20:52:13 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/23 20:52:13 [notice] 1#1: OS: Linux 5.10.76-linuxkit
+2022/07/23 20:52:13 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/23 20:52:13 [notice] 1#1: start worker processes
+2022/07/23 20:52:13 [notice] 1#1: start worker process 26
+2022/07/23 20:52:13 [notice] 1#1: start worker process 27
+2022/07/23 20:52:13 [notice] 1#1: start worker process 28
+2022/07/23 20:52:13 [notice] 1#1: start worker process 29
+2022/07/23 20:52:13 [notice] 1#1: start worker process 30
+2022/07/23 20:52:13 [notice] 1#1: start worker process 31
+2022/07/23 20:52:15 [error] 26#26: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/23 20:52:16 [error] 26#26: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/23 20:52:17 [error] 26#26: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/23 20:52:32 [error] 26#26: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/23 20:54:57 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/23 20:54:57 [notice] 26#26: gracefully shutting down
+2022/07/23 20:54:57 [notice] 26#26: exiting
+2022/07/23 20:54:57 [notice] 27#27: gracefully shutting down
+2022/07/23 20:54:57 [notice] 27#27: exiting
+2022/07/23 20:54:57 [notice] 28#28: gracefully shutting down
+2022/07/23 20:54:57 [notice] 28#28: exiting
+2022/07/23 20:54:57 [notice] 29#29: gracefully shutting down
+2022/07/23 20:54:57 [notice] 29#29: exiting
+2022/07/23 20:54:57 [notice] 30#30: gracefully shutting down
+2022/07/23 20:54:57 [notice] 30#30: exiting
+2022/07/23 20:54:57 [notice] 31#31: gracefully shutting down
+2022/07/23 20:54:57 [notice] 26#26: exit
+2022/07/23 20:54:57 [notice] 27#27: exit
+2022/07/23 20:54:57 [notice] 28#28: exit
+2022/07/23 20:54:57 [notice] 29#29: exit
+2022/07/23 20:54:57 [notice] 30#30: exit
+2022/07/23 20:54:57 [notice] 31#31: exiting
+2022/07/23 20:54:57 [notice] 31#31: exit
+2022/07/23 20:54:57 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2022/07/23 20:54:57 [notice] 1#1: worker process 26 exited with code 0
+2022/07/23 20:54:57 [notice] 1#1: worker process 27 exited with code 0
+2022/07/23 20:54:57 [notice] 1#1: worker process 28 exited with code 0
+2022/07/23 20:54:57 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/23 20:54:57 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/07/23 20:54:57 [notice] 1#1: worker process 29 exited with code 0
+2022/07/23 20:54:57 [notice] 1#1: worker process 30 exited with code 0
+2022/07/23 20:54:57 [notice] 1#1: worker process 31 exited with code 0
+2022/07/23 20:54:57 [notice] 1#1: exit
+2022/07/23 20:54:57 [notice] 1#1: using the "epoll" event method
+2022/07/23 20:54:57 [notice] 1#1: nginx/1.23.1
+2022/07/23 20:54:57 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/23 20:54:57 [notice] 1#1: OS: Linux 5.10.76-linuxkit
+2022/07/23 20:54:57 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/23 20:54:57 [notice] 1#1: start worker processes
+2022/07/23 20:54:57 [notice] 1#1: start worker process 24
+2022/07/23 20:54:57 [notice] 1#1: start worker process 25
+2022/07/23 20:54:57 [notice] 1#1: start worker process 26
+2022/07/23 20:54:57 [notice] 1#1: start worker process 27
+2022/07/23 20:54:57 [notice] 1#1: start worker process 28
+2022/07/23 20:54:57 [notice] 1#1: start worker process 29
+2022/07/23 20:55:05 [error] 24#24: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/23 20:56:08 [error] 24#24: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/23 20:57:40 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/23 20:57:40 [notice] 24#24: gracefully shutting down
+2022/07/23 20:57:40 [notice] 24#24: exiting
+2022/07/23 20:57:40 [notice] 26#26: gracefully shutting down
+2022/07/23 20:57:40 [notice] 25#25: gracefully shutting down
+2022/07/23 20:57:40 [notice] 25#25: exiting
+2022/07/23 20:57:40 [notice] 27#27: gracefully shutting down
+2022/07/23 20:57:40 [notice] 28#28: gracefully shutting down
+2022/07/23 20:57:40 [notice] 28#28: exiting
+2022/07/23 20:57:40 [notice] 29#29: gracefully shutting down
+2022/07/23 20:57:40 [notice] 24#24: exit
+2022/07/23 20:57:40 [notice] 26#26: exiting
+2022/07/23 20:57:40 [notice] 25#25: exit
+2022/07/23 20:57:40 [notice] 27#27: exiting
+2022/07/23 20:57:40 [notice] 28#28: exit
+2022/07/23 20:57:40 [notice] 29#29: exiting
+2022/07/23 20:57:40 [notice] 26#26: exit
+2022/07/23 20:57:40 [notice] 27#27: exit
+2022/07/23 20:57:40 [notice] 29#29: exit
+2022/07/23 20:57:40 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2022/07/23 20:57:40 [notice] 1#1: worker process 24 exited with code 0
+2022/07/23 20:57:40 [notice] 1#1: worker process 26 exited with code 0
+2022/07/23 20:57:40 [notice] 1#1: worker process 27 exited with code 0
+2022/07/23 20:57:40 [notice] 1#1: worker process 28 exited with code 0
+2022/07/23 20:57:40 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/23 20:57:40 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/07/23 20:57:40 [notice] 1#1: worker process 25 exited with code 0
+2022/07/23 20:57:40 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/23 20:57:40 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/07/23 20:57:40 [notice] 1#1: worker process 29 exited with code 0
+2022/07/23 20:57:40 [notice] 1#1: exit
+2022/07/23 20:57:41 [notice] 1#1: using the "epoll" event method
+2022/07/23 20:57:41 [notice] 1#1: nginx/1.23.1
+2022/07/23 20:57:41 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/23 20:57:41 [notice] 1#1: OS: Linux 5.10.76-linuxkit
+2022/07/23 20:57:41 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/23 20:57:41 [notice] 1#1: start worker processes
+2022/07/23 20:57:41 [notice] 1#1: start worker process 24
+2022/07/23 20:57:41 [notice] 1#1: start worker process 25
+2022/07/23 20:57:41 [notice] 1#1: start worker process 26
+2022/07/23 20:57:41 [notice] 1#1: start worker process 27
+2022/07/23 20:57:41 [notice] 1#1: start worker process 28
+2022/07/23 20:57:41 [notice] 1#1: start worker process 29
+2022/07/23 21:01:18 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/23 21:01:18 [notice] 25#25: gracefully shutting down
+2022/07/23 21:01:18 [notice] 24#24: gracefully shutting down
+2022/07/23 21:01:18 [notice] 24#24: exiting
+2022/07/23 21:01:18 [notice] 26#26: gracefully shutting down
+2022/07/23 21:01:18 [notice] 28#28: gracefully shutting down
+2022/07/23 21:01:18 [notice] 28#28: exiting
+2022/07/23 21:01:18 [notice] 27#27: gracefully shutting down
+2022/07/23 21:01:18 [notice] 27#27: exiting
+2022/07/23 21:01:18 [notice] 29#29: gracefully shutting down
+2022/07/23 21:01:18 [notice] 25#25: exiting
+2022/07/23 21:01:18 [notice] 24#24: exit
+2022/07/23 21:01:18 [notice] 26#26: exiting
+2022/07/23 21:01:18 [notice] 28#28: exit
+2022/07/23 21:01:18 [notice] 27#27: exit
+2022/07/23 21:01:18 [notice] 29#29: exiting
+2022/07/23 21:01:18 [notice] 29#29: exit
+2022/07/23 21:01:18 [notice] 25#25: exit
+2022/07/23 21:01:18 [notice] 26#26: exit
+2022/07/23 21:01:18 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2022/07/23 21:01:18 [notice] 1#1: worker process 27 exited with code 0
+2022/07/23 21:01:18 [notice] 1#1: worker process 28 exited with code 0
+2022/07/23 21:01:18 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/23 21:01:18 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2022/07/23 21:01:18 [notice] 1#1: worker process 24 exited with code 0
+2022/07/23 21:01:18 [notice] 1#1: worker process 29 exited with code 0
+2022/07/23 21:01:18 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/23 21:01:18 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/07/23 21:01:18 [notice] 1#1: worker process 25 exited with code 0
+2022/07/23 21:01:18 [notice] 1#1: worker process 26 exited with code 0
+2022/07/23 21:01:18 [notice] 1#1: exit
+2022/07/23 21:01:27 [notice] 1#1: using the "epoll" event method
+2022/07/23 21:01:27 [notice] 1#1: nginx/1.23.1
+2022/07/23 21:01:27 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/23 21:01:27 [notice] 1#1: OS: Linux 5.10.76-linuxkit
+2022/07/23 21:01:27 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/23 21:01:27 [notice] 1#1: start worker processes
+2022/07/23 21:01:27 [notice] 1#1: start worker process 24
+2022/07/23 21:01:27 [notice] 1#1: start worker process 25
+2022/07/23 21:01:27 [notice] 1#1: start worker process 26
+2022/07/23 21:01:27 [notice] 1#1: start worker process 27
+2022/07/23 21:01:27 [notice] 1#1: start worker process 28
+2022/07/23 21:01:27 [notice] 1#1: start worker process 29
+2022/07/24 01:28:35 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/24 01:28:35 [notice] 24#24: gracefully shutting down
+2022/07/24 01:28:35 [notice] 25#25: gracefully shutting down
+2022/07/24 01:28:35 [notice] 25#25: exiting
+2022/07/24 01:28:35 [notice] 26#26: gracefully shutting down
+2022/07/24 01:28:35 [notice] 26#26: exiting
+2022/07/24 01:28:35 [notice] 27#27: gracefully shutting down
+2022/07/24 01:28:35 [notice] 28#28: gracefully shutting down
+2022/07/24 01:28:35 [notice] 29#29: gracefully shutting down
+2022/07/24 01:28:35 [notice] 24#24: exiting
+2022/07/24 01:28:35 [notice] 25#25: exit
+2022/07/24 01:28:35 [notice] 26#26: exit
+2022/07/24 01:28:35 [notice] 27#27: exiting
+2022/07/24 01:28:35 [notice] 28#28: exiting
+2022/07/24 01:28:35 [notice] 29#29: exiting
+2022/07/24 01:28:35 [notice] 24#24: exit
+2022/07/24 01:28:35 [notice] 27#27: exit
+2022/07/24 01:28:35 [notice] 28#28: exit
+2022/07/24 01:28:35 [notice] 29#29: exit
+2022/07/24 01:28:35 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/07/24 01:28:35 [notice] 1#1: worker process 25 exited with code 0
+2022/07/24 01:28:35 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/24 01:28:35 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2022/07/24 01:28:35 [notice] 1#1: worker process 28 exited with code 0
+2022/07/24 01:28:35 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/24 01:28:35 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2022/07/24 01:28:35 [notice] 1#1: worker process 26 exited with code 0
+2022/07/24 01:28:35 [notice] 1#1: worker process 24 exited with code 0
+2022/07/24 01:28:35 [notice] 1#1: worker process 27 exited with code 0
+2022/07/24 01:28:35 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2022/07/24 01:28:35 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/24 01:28:35 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/07/24 01:28:35 [notice] 1#1: worker process 29 exited with code 0
+2022/07/24 01:28:35 [notice] 1#1: exit
+2022/07/24 01:29:55 [notice] 1#1: using the "epoll" event method
+2022/07/24 01:29:55 [notice] 1#1: nginx/1.23.1
+2022/07/24 01:29:55 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/24 01:29:55 [notice] 1#1: OS: Linux 5.10.76-linuxkit
+2022/07/24 01:29:55 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/24 01:29:55 [notice] 1#1: start worker processes
+2022/07/24 01:29:55 [notice] 1#1: start worker process 24
+2022/07/24 01:29:55 [notice] 1#1: start worker process 25
+2022/07/24 01:29:55 [notice] 1#1: start worker process 26
+2022/07/24 01:29:55 [notice] 1#1: start worker process 27
+2022/07/24 01:29:55 [notice] 1#1: start worker process 28
+2022/07/24 01:29:55 [notice] 1#1: start worker process 29
+2022/07/24 01:45:47 [error] 25#25: *3 open() "/home/www/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/index.php"
+2022/07/24 01:48:47 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/24 01:48:47 [notice] 24#24: gracefully shutting down
+2022/07/24 01:48:47 [notice] 25#25: gracefully shutting down
+2022/07/24 01:48:47 [notice] 25#25: exiting
+2022/07/24 01:48:47 [notice] 26#26: gracefully shutting down
+2022/07/24 01:48:47 [notice] 26#26: exiting
+2022/07/24 01:48:47 [notice] 27#27: gracefully shutting down
+2022/07/24 01:48:47 [notice] 27#27: exiting
+2022/07/24 01:48:47 [notice] 28#28: gracefully shutting down
+2022/07/24 01:48:47 [notice] 28#28: exiting
+2022/07/24 01:48:47 [notice] 29#29: gracefully shutting down
+2022/07/24 01:48:47 [notice] 24#24: exiting
+2022/07/24 01:48:47 [notice] 25#25: exit
+2022/07/24 01:48:47 [notice] 26#26: exit
+2022/07/24 01:48:47 [notice] 27#27: exit
+2022/07/24 01:48:47 [notice] 28#28: exit
+2022/07/24 01:48:47 [notice] 29#29: exiting
+2022/07/24 01:48:47 [notice] 24#24: exit
+2022/07/24 01:48:47 [notice] 29#29: exit
+2022/07/24 01:48:47 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/07/24 01:48:47 [notice] 1#1: worker process 25 exited with code 0
+2022/07/24 01:48:47 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/24 01:48:47 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2022/07/24 01:48:47 [notice] 1#1: worker process 26 exited with code 0
+2022/07/24 01:48:47 [notice] 1#1: worker process 27 exited with code 0
+2022/07/24 01:48:47 [notice] 1#1: worker process 28 exited with code 0
+2022/07/24 01:48:47 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/24 01:48:47 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/07/24 01:48:47 [notice] 1#1: worker process 24 exited with code 0
+2022/07/24 01:48:47 [notice] 1#1: worker process 29 exited with code 0
+2022/07/24 01:48:47 [notice] 1#1: exit
+2022/07/24 01:54:45 [notice] 1#1: using the "epoll" event method
+2022/07/24 01:54:45 [notice] 1#1: nginx/1.23.1
+2022/07/24 01:54:45 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/24 01:54:45 [notice] 1#1: OS: Linux 5.10.76-linuxkit
+2022/07/24 01:54:45 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/24 01:54:45 [notice] 1#1: start worker processes
+2022/07/24 01:54:45 [notice] 1#1: start worker process 24
+2022/07/24 01:54:45 [notice] 1#1: start worker process 25
+2022/07/24 01:54:45 [notice] 1#1: start worker process 26
+2022/07/24 01:54:45 [notice] 1#1: start worker process 27
+2022/07/24 01:54:45 [notice] 1#1: start worker process 28
+2022/07/24 01:54:45 [notice] 1#1: start worker process 29
+2022/07/24 10:56:38 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/24 10:56:38 [notice] 26#26: gracefully shutting down
+2022/07/24 10:56:38 [notice] 25#25: gracefully shutting down
+2022/07/24 10:56:38 [notice] 24#24: gracefully shutting down
+2022/07/24 10:56:38 [notice] 28#28: gracefully shutting down
+2022/07/24 10:56:38 [notice] 27#27: gracefully shutting down
+2022/07/24 10:56:38 [notice] 29#29: gracefully shutting down
+2022/07/24 10:56:38 [notice] 26#26: exiting
+2022/07/24 10:56:38 [notice] 25#25: exiting
+2022/07/24 10:56:38 [notice] 24#24: exiting
+2022/07/24 10:56:38 [notice] 28#28: exiting
+2022/07/24 10:56:38 [notice] 27#27: exiting
+2022/07/24 10:56:38 [notice] 29#29: exiting
+2022/07/24 10:56:38 [notice] 26#26: exit
+2022/07/24 10:56:38 [notice] 25#25: exit
+2022/07/24 10:56:38 [notice] 24#24: exit
+2022/07/24 10:56:38 [notice] 28#28: exit
+2022/07/24 10:56:38 [notice] 27#27: exit
+2022/07/24 10:56:38 [notice] 29#29: exit
+2022/07/24 10:56:38 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2022/07/24 10:56:38 [notice] 1#1: worker process 27 exited with code 0
+2022/07/24 10:56:38 [notice] 1#1: worker process 28 exited with code 0
+2022/07/24 10:56:38 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/24 10:56:38 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2022/07/24 10:56:38 [notice] 1#1: worker process 26 exited with code 0
+2022/07/24 10:56:38 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/24 10:56:38 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/07/24 10:56:38 [notice] 1#1: worker process 29 exited with code 0
+2022/07/24 10:56:38 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/24 10:56:38 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/07/24 10:56:38 [notice] 1#1: worker process 24 exited with code 0
+2022/07/24 10:56:38 [notice] 1#1: worker process 25 exited with code 0
+2022/07/24 10:56:38 [notice] 1#1: exit
+2022/07/24 11:45:47 [notice] 1#1: using the "epoll" event method
+2022/07/24 11:45:47 [notice] 1#1: nginx/1.23.1
+2022/07/24 11:45:47 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/24 11:45:47 [notice] 1#1: OS: Linux 5.10.76-linuxkit
+2022/07/24 11:45:47 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/24 11:45:47 [notice] 1#1: start worker processes
+2022/07/24 11:45:47 [notice] 1#1: start worker process 25
+2022/07/24 11:45:47 [notice] 1#1: start worker process 26
+2022/07/24 11:45:47 [notice] 1#1: start worker process 27
+2022/07/24 11:45:47 [notice] 1#1: start worker process 28
+2022/07/24 11:45:47 [notice] 1#1: start worker process 29
+2022/07/24 11:45:47 [notice] 1#1: start worker process 30
+2022/07/24 12:43:06 [error] 25#25: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  Use of undefined constant redis - assumed 'redis' (this will throw an Error in a future version of PHP) in /home/www/redis.php on line 3PHP message: PHP Warning:  Redis::connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/www/redis.php on line 3PHP message: PHP Fatal error:  Uncaught RedisException: php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 12:43:42 [error] 25#25: *1 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '.0' (T_DNUMBER), expecting ')' in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 12:43:59 [error] 25#25: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: No route to host in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 12:44:37 [error] 25#25: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 12:49:09 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/24 12:49:09 [notice] 26#26: gracefully shutting down
+2022/07/24 12:49:09 [notice] 26#26: exiting
+2022/07/24 12:49:09 [notice] 28#28: gracefully shutting down
+2022/07/24 12:49:09 [notice] 28#28: exiting
+2022/07/24 12:49:09 [notice] 29#29: gracefully shutting down
+2022/07/24 12:49:09 [notice] 29#29: exiting
+2022/07/24 12:49:09 [notice] 25#25: gracefully shutting down
+2022/07/24 12:49:09 [notice] 25#25: exiting
+2022/07/24 12:49:09 [notice] 27#27: gracefully shutting down
+2022/07/24 12:49:09 [notice] 27#27: exiting
+2022/07/24 12:49:09 [notice] 30#30: gracefully shutting down
+2022/07/24 12:49:09 [notice] 30#30: exiting
+2022/07/24 12:49:09 [notice] 26#26: exit
+2022/07/24 12:49:09 [notice] 28#28: exit
+2022/07/24 12:49:09 [notice] 29#29: exit
+2022/07/24 12:49:09 [notice] 25#25: exit
+2022/07/24 12:49:09 [notice] 27#27: exit
+2022/07/24 12:49:09 [notice] 30#30: exit
+2022/07/24 12:49:09 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/07/24 12:49:09 [notice] 1#1: worker process 25 exited with code 0
+2022/07/24 12:49:09 [notice] 1#1: worker process 26 exited with code 0
+2022/07/24 12:49:09 [notice] 1#1: worker process 27 exited with code 0
+2022/07/24 12:49:09 [notice] 1#1: worker process 28 exited with code 0
+2022/07/24 12:49:09 [notice] 1#1: worker process 29 exited with code 0
+2022/07/24 12:49:09 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2022/07/24 12:49:09 [notice] 1#1: worker process 30 exited with code 0
+2022/07/24 12:49:09 [notice] 1#1: exit
+2022/07/24 14:40:34 [notice] 1#1: using the "epoll" event method
+2022/07/24 14:40:34 [notice] 1#1: nginx/1.23.1
+2022/07/24 14:40:34 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/24 14:40:34 [notice] 1#1: OS: Linux 5.10.76-linuxkit
+2022/07/24 14:40:34 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/24 14:40:34 [notice] 1#1: start worker processes
+2022/07/24 14:40:34 [notice] 1#1: start worker process 24
+2022/07/24 14:40:34 [notice] 1#1: start worker process 25
+2022/07/24 14:40:34 [notice] 1#1: start worker process 26
+2022/07/24 14:40:34 [notice] 1#1: start worker process 27
+2022/07/24 14:40:34 [notice] 1#1: start worker process 28
+2022/07/24 14:40:34 [notice] 1#1: start worker process 29
+2022/07/24 14:41:33 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/24 14:41:33 [notice] 27#27: gracefully shutting down
+2022/07/24 14:41:33 [notice] 27#27: exiting
+2022/07/24 14:41:33 [notice] 28#28: gracefully shutting down
+2022/07/24 14:41:33 [notice] 28#28: exiting
+2022/07/24 14:41:33 [notice] 24#24: gracefully shutting down
+2022/07/24 14:41:33 [notice] 24#24: exiting
+2022/07/24 14:41:33 [notice] 26#26: gracefully shutting down
+2022/07/24 14:41:33 [notice] 26#26: exiting
+2022/07/24 14:41:33 [notice] 25#25: gracefully shutting down
+2022/07/24 14:41:33 [notice] 29#29: gracefully shutting down
+2022/07/24 14:41:33 [notice] 27#27: exit
+2022/07/24 14:41:33 [notice] 28#28: exit
+2022/07/24 14:41:33 [notice] 24#24: exit
+2022/07/24 14:41:33 [notice] 26#26: exit
+2022/07/24 14:41:33 [notice] 25#25: exiting
+2022/07/24 14:41:33 [notice] 29#29: exiting
+2022/07/24 14:41:33 [notice] 25#25: exit
+2022/07/24 14:41:33 [notice] 29#29: exit
+2022/07/24 14:41:33 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2022/07/24 14:41:33 [notice] 1#1: worker process 26 exited with code 0
+2022/07/24 14:41:33 [notice] 1#1: worker process 27 exited with code 0
+2022/07/24 14:41:33 [notice] 1#1: worker process 28 exited with code 0
+2022/07/24 14:41:33 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/24 14:41:33 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2022/07/24 14:41:33 [notice] 1#1: worker process 24 exited with code 0
+2022/07/24 14:41:33 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2022/07/24 14:41:33 [notice] 1#1: worker process 25 exited with code 0
+2022/07/24 14:41:33 [notice] 1#1: worker process 29 exited with code 0
+2022/07/24 14:41:33 [notice] 1#1: exit
+2022/07/24 14:51:55 [notice] 1#1: using the "epoll" event method
+2022/07/24 14:51:55 [notice] 1#1: nginx/1.23.1
+2022/07/24 14:51:55 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/24 14:51:55 [notice] 1#1: OS: Linux 5.10.76-linuxkit
+2022/07/24 14:51:55 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/24 14:51:55 [notice] 1#1: start worker processes
+2022/07/24 14:51:55 [notice] 1#1: start worker process 25
+2022/07/24 14:51:55 [notice] 1#1: start worker process 26
+2022/07/24 14:51:55 [notice] 1#1: start worker process 27
+2022/07/24 14:51:55 [notice] 1#1: start worker process 28
+2022/07/24 14:51:55 [notice] 1#1: start worker process 29
+2022/07/24 14:51:55 [notice] 1#1: start worker process 30
+2022/07/24 14:53:11 [error] 25#25: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 14:54:16 [error] 26#26: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 14:54:17 [error] 26#26: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 14:54:17 [error] 26#26: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 14:54:18 [error] 26#26: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 14:54:18 [error] 26#26: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 14:54:51 [error] 26#26: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 14:54:52 [error] 26#26: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 14:59:50 [error] 27#27: *11 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:01:38 [error] 28#28: *13 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: DENIED Redis is running in protected mode because protected mode is enabled and no password is set for the default user. In this mode connections are only accepted from the loopback interface. If you want to connect from external computers to Redis you may adopt one of the following solutions: 1) Just disable protected mode sending the command 'CONFIG SET protected-mode no' from the loopback interface by connecting to Redis from the same host the server is running, however MAKE SURE Redis is not publicly accessible from internet if you do so. Use CONFIG REWRITE to make this change permanent. 2) Alternatively you can just disable the protected mode by editing the Redis configuration file, and setting the protected mode option to 'no', and then restarting the server. 3) If you started the server manually just for testing, restart it with the '--protected-mode no' option. 4) Setup a an authentication password for the default user. NOTE: You only need to do one of the above things in orde in /home/www/redis.php on line 6" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:12:53 [error] 29#29: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:13:13 [error] 29#29: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:13:14 [error] 29#29: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:13:14 [error] 29#29: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:13:14 [error] 29#29: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:13:48 [error] 29#29: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:13:48 [error] 29#29: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:14:12 [error] 29#29: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:14:13 [error] 29#29: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:14:13 [error] 29#29: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:14:14 [error] 29#29: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:14:14 [error] 29#29: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:15:41 [error] 30#30: *28 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:15:42 [error] 30#30: *28 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:15:42 [error] 30#30: *28 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:15:43 [error] 30#30: *28 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:15:43 [error] 30#30: *28 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:15:43 [error] 30#30: *28 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:15:43 [error] 30#30: *28 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:16:22 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/24 15:16:22 [notice] 30#30: gracefully shutting down
+2022/07/24 15:16:22 [notice] 30#30: exiting
+2022/07/24 15:16:22 [notice] 29#29: gracefully shutting down
+2022/07/24 15:16:22 [notice] 29#29: exiting
+2022/07/24 15:16:22 [notice] 28#28: gracefully shutting down
+2022/07/24 15:16:22 [notice] 28#28: exiting
+2022/07/24 15:16:22 [notice] 26#26: gracefully shutting down
+2022/07/24 15:16:22 [notice] 26#26: exiting
+2022/07/24 15:16:22 [notice] 27#27: gracefully shutting down
+2022/07/24 15:16:22 [notice] 25#25: gracefully shutting down
+2022/07/24 15:16:22 [notice] 30#30: exit
+2022/07/24 15:16:22 [notice] 29#29: exit
+2022/07/24 15:16:22 [notice] 28#28: exit
+2022/07/24 15:16:22 [notice] 26#26: exit
+2022/07/24 15:16:22 [notice] 27#27: exiting
+2022/07/24 15:16:22 [notice] 25#25: exiting
+2022/07/24 15:16:22 [notice] 25#25: exit
+2022/07/24 15:16:22 [notice] 27#27: exit
+2022/07/24 15:16:22 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/07/24 15:16:22 [notice] 1#1: worker process 30 exited with code 0
+2022/07/24 15:16:22 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/24 15:16:22 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/07/24 15:16:22 [notice] 1#1: worker process 29 exited with code 0
+2022/07/24 15:16:22 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/24 15:16:22 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2022/07/24 15:16:22 [notice] 1#1: worker process 28 exited with code 0
+2022/07/24 15:16:22 [notice] 1#1: worker process 26 exited with code 0
+2022/07/24 15:16:22 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/24 15:16:22 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2022/07/24 15:16:22 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/07/24 15:16:22 [notice] 1#1: worker process 25 exited with code 0
+2022/07/24 15:16:22 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/24 15:16:22 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2022/07/24 15:16:22 [notice] 1#1: worker process 27 exited with code 0
+2022/07/24 15:16:22 [notice] 1#1: exit
+2022/07/24 15:17:57 [notice] 1#1: using the "epoll" event method
+2022/07/24 15:17:57 [notice] 1#1: nginx/1.23.1
+2022/07/24 15:17:57 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/24 15:17:57 [notice] 1#1: OS: Linux 5.10.76-linuxkit
+2022/07/24 15:17:57 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/24 15:17:57 [notice] 1#1: start worker processes
+2022/07/24 15:17:57 [notice] 1#1: start worker process 24
+2022/07/24 15:17:57 [notice] 1#1: start worker process 25
+2022/07/24 15:17:57 [notice] 1#1: start worker process 26
+2022/07/24 15:17:57 [notice] 1#1: start worker process 27
+2022/07/24 15:17:57 [notice] 1#1: start worker process 28
+2022/07/24 15:17:57 [notice] 1#1: start worker process 29
+2022/07/24 15:33:12 [error] 24#24: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:33:13 [error] 24#24: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Connection refused in /home/www/redis.php:3
+Stack trace:
+#0 /home/www/redis.php(3): Redis->connect()
+#1 {main}
+  thrown in /home/www/redis.php on line 3" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 15:34:07 [error] 24#24: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: WRONGPASS invalid username-password pair or user is disabled. in /home/www/redis.php:4
+Stack trace:
+#0 /home/www/redis.php(4): Redis->auth()
+#1 {main}
+  thrown in /home/www/redis.php on line 4" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /redis.php HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "127.0.0.1"
+2022/07/24 22:11:40 [error] 25#25: *8 open() "/home/www/announce" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /announce?info_hash=%D0e%8DD%A7nDS%BE%ADG%24%B1%13%B0zZ%06c%D8&peer_id=-XL0018-F%0E%1C%B1%BC%3E%13%400U%1B%06&port=12345&uploaded=0&downloaded=0&left=0&numwant=200&key=1700913651&compact=1&event=started HTTP/1.0", host: "tracker.torrentyorg.pl"
+2022/07/24 22:11:51 [error] 26#26: *9 open() "/home/www/announce" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /announce?info_hash=%D0e%8DD%A7nDS%BE%ADG%24%B1%13%B0zZ%06c%D8&peer_id=-XL0018-F%0E%1C%B1%BC%3E%13%400U%1B%06&port=12345&uploaded=0&downloaded=0&left=0&numwant=200&key=1700913651&compact=1&event=started HTTP/1.0", host: "tracker.torrentyorg.pl"
+2022/07/24 22:12:06 [error] 27#27: *10 open() "/home/www/announce" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /announce?info_hash=%D0e%8DD%A7nDS%BE%ADG%24%B1%13%B0zZ%06c%D8&peer_id=-XL0018-F%0E%1C%B1%BC%3E%13%400U%1B%06&port=12345&uploaded=0&downloaded=0&left=0&numwant=200&key=1700913651&compact=1&event=started HTTP/1.0", host: "tracker.torrentyorg.pl"

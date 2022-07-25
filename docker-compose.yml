@@ -1,0 +1,96 @@
+version: '3.3'
+
+x-hosts: &xhosts
+  extra_hosts:
+    - "mysql57:$MYSQL57_IP"
+    - "php74:$PHP74_IP"
+    - "redis:$REDIS_IP"
+
+services:
+  php74:
+    build: 
+      context: ./php/7.4
+    ports:
+      - "9501:9501"
+      - "9502:9502"
+    environment:
+      TZ: $TIMEZONE
+    volumes: 
+      - ./php/7.4/config/php.ini:/usr/local/etc/php/php.ini
+      - ./php/7.4/config/php-fpm.conf:/usr/local/etc/php-fpm.conf
+      - ./php/7.4/config/php-fpm.d:/usr/local/etc/php-fpm.d
+      - ./log/php74:/var/log/php-fpm
+      - ./www:/home/www
+    container_name: php74
+    networks:
+      my_network:
+        ipv4_address: $PHP74_IP    
+    depends_on:
+      - redis
+    <<: *xhosts
+
+  nginx:
+    build:
+      context: ./nginx
+    ports:
+      - "80:80"
+      - "8080:8080"
+    restart: always
+    environment:
+      TZ: $TIMEZONE    
+    volumes: 
+      - ./www:/home/www
+      - ./log/nginx:/var/log/nginx
+      - ./nginx/config/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/conf.d:/etc/nginx/conf.d
+    container_name: nginx
+    networks:
+      my_network:
+        ipv4_address: $NGINX_IP
+    depends_on:
+      - php74
+
+  redis:
+    build:
+      context: ./redis
+    ports:
+      - "6379:6379"
+    environment:
+      TZ: $TIMEZONE
+    container_name: redis
+    networks:
+      my_network:
+        ipv4_address: $REDIS_IP
+    volumes: 
+      - ./redis/config/redis.conf/:/usr/local/etc/redis/redis.conf
+      - ./redis/data:/usr/local/redis/data
+      - ./log/redis:/usr/local/redis/log
+    command:
+      - --requirepass 123456
+    depends_on:
+      - mysql57
+
+
+  mysql57:
+    build: ./mysql/5.7
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql/5.7/data:/var/lib/mysql
+      - ./mysql/5.7/my.cnf:/etc/my.cnf
+    environment:
+      TZ: $TIMEZONE
+      MYSQL_ROOT_PASSWORD: 123456
+    networks:
+      my_network:
+        ipv4_address: $MYSQL57_IP
+    restart: always
+    container_name: mysql57
+
+
+networks:
+  my_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: $MY_NETWORK_SUBNET
