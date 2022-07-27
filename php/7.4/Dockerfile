@@ -1,4 +1,9 @@
 FROM php:7.4-fpm
+
+RUN mkdir -p /home 
+RUN mkdir -p /home/www
+WORKDIR /home/www
+
 COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr/bin/
 
 
