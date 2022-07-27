@@ -40,4 +40,4 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -q \
       iconv \
       mbstring \
       amqp \
-      rdkafka
+      rdkafka 
