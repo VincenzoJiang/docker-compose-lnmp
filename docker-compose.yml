@@ -6,6 +6,7 @@ x-hosts: &xhosts
     - "php74:$PHP74_IP"
     - "redis:$REDIS_IP"
     - "rabbit:$RABBITMQ_IP"
+    - "memcached:$MEMCACHED_IP"
 
 services:
   php74:
@@ -17,6 +18,7 @@ services:
       - "9502:9502"
     environment:
       TZ: $TIMEZONE
+    restart: always
     volumes: 
       - ./php/7.4/config/php.ini:/usr/local/etc/php/php.ini
       - ./php/7.4/config/php-fpm.conf:/usr/local/etc/php-fpm.conf
@@ -57,6 +59,7 @@ services:
       context: ./redis
     ports:
       - "6379:6379"
+    restart: always
     environment:
       TZ: $TIMEZONE
     container_name: redis
@@ -94,12 +97,25 @@ services:
     ports:
       - "15672:15672"
       - "5672:5672"
+    restart: always
     environment:
       TZ: $TIMEZONE
     container_name: rabbitmq
     networks:
       my_network:
         ipv4_address: $RABBITMQ_IP
+
+  memcached:
+    build: ./memcached
+    ports:
+      - "11211:11211"
+    networks:
+      my_network:
+        ipv4_address: $MEMCACHED_IP
+    environment:
+      TZ: $TIMEZONE
+    restart: always
+    container_name: memcached
 
 networks:
   my_network:
