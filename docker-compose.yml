@@ -16,6 +16,7 @@ services:
       - "1238:1238"
       - "9501:9501"
       - "9502:9502"
+      - "9508:9508"
     environment:
       TZ: $TIMEZONE
     restart: always
@@ -39,6 +40,7 @@ services:
     ports:
       - "80:80"
       - "8080:8080"
+      - "8012:8012"
     restart: always
     environment:
       TZ: $TIMEZONE    
@@ -53,6 +55,7 @@ services:
         ipv4_address: $NGINX_IP
     depends_on:
       - php74
+    <<: *xhosts
 
   redis:
     build:

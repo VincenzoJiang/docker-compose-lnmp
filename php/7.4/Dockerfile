@@ -1,19 +1,17 @@
 FROM php:7.4-fpm
 
-RUN mkdir -p /home 
-RUN mkdir -p /home/www
+RUN mkdir -p /home && mkdir -p /home/www
 WORKDIR /home/www
 
 COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr/bin/
 
-
-RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get update -q \
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get update -q \
     && DEBIAN_FRONTEND=noninteractive apt-get install -qq -y \
       curl \
       git  \
       zip unzip \
-    && install-php-extensions \
+      wget \
+      lsof && install-php-extensions \
       bcmath \
       bz2 \
       calendar \
@@ -32,12 +30,13 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -q \
       xsl \
       zip \
       sockets \
-      swoole \
       yaf \
-      memcached \
       mongodb \
       mcrypt \
-      iconv \
-      mbstring \
       amqp \
-      rdkafka 
+      rdkafka \
+      pcntl \
+      Protobuf
+
+##swoole
+RUN wget -O /tmp/swoole-4.6.6.tgz https://pecl.php.net/get/swoole-4.6.6.tgz && tar -xzvf /tmp/swoole-4.6.6.tgz -C /tmp && mv  /tmp/swoole-4.6.6 /usr/src/php/ext/swoole && docker-php-ext-install swoole
