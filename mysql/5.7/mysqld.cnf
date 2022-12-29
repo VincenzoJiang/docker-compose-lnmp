@@ -30,3 +30,5 @@ datadir		= /var/lib/mysql
 symbolic-links=0
 sql_mode="NO_ENGINE_SUBSTITUTION"
 default-time_zone='+8:00'
+log-bin=mysql-bin #开启二进制日志
+server-id=1 #设置server-id

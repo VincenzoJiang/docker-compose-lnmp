@@ -3,12 +3,34 @@ version: '3.3'
 x-hosts: &xhosts
   extra_hosts:
     - "mysql57:$MYSQL57_IP"
+    - "php73:$PHP73_IP"
     - "php74:$PHP74_IP"
     - "redis:$REDIS_IP"
     - "rabbit:$RABBITMQ_IP"
     - "memcached:$MEMCACHED_IP"
 
 services:
+  php73:
+    build:
+      context: ./php/7.3
+    environment:
+      TZ: $TIMEZONE
+    restart: always
+    volumes: 
+      - ./php/7.3/config/php.ini:/usr/local/etc/php/php.ini
+      - ./php/7.3/config/php-fpm.conf:/usr/local/etc/php-fpm.conf
+      - ./php/7.3/config/php-fpm.d:/usr/local/etc/php-fpm.d
+      - ./php/7.3/sources.list:/etc/apt/sources.list
+      - ./log/php73:/var/log/php-fpm
+      - ./www:/home/www
+    container_name: php73
+    networks:
+      my_network:
+        ipv4_address: $PHP73_IP    
+    depends_on:
+      - redis
+    <<: *xhosts
+
   php74:
     build: 
       context: ./php/7.4
