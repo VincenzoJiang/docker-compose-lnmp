@@ -117,6 +117,9 @@ RUN wget -O /tmp/swoole.tar.gz https://pecl.php.net/get/swoole-4.6.6.tgz \
     && rm -rf /tmp/swoole.tar.gz /tmp/swoole-4.6.6
 
 
+#composer
+curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+mv composer.phar /usr/local/bin/composer
 
 
 
