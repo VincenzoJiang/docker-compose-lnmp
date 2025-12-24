@@ -25,36 +25,37 @@ services:
       - ./www:/home/www
     container_name: php73
     networks:
-      my_network:
-        ipv4_address: $PHP73_IP
+     my_network:
+       ipv4_address: $PHP73_IP
     depends_on:
       - redis
     <<: *xhosts
 
-#  php74:
-#    build:
-#      context: ./php/7.4
-#    ports:
-#      - "1238:1238"
-#      - "9501:9501"
-#      - "9502:9502"
-#      - "9508:9508"
-#    environment:
-#      TZ: $TIMEZONE
-#    restart: always
-#    volumes:
-#      - ./php/7.4/config/php.ini:/usr/local/etc/php/php.ini
-#      - ./php/7.4/config/php-fpm.conf:/usr/local/etc/php-fpm.conf
-#      - ./php/7.4/config/php-fpm.d:/usr/local/etc/php-fpm.d
-#      - ./log/php74:/var/log/php-fpm
-#      - ./www:/home/www
-#    container_name: php74
-#    networks:
-#      my_network:
-#        ipv4_address: $PHP74_IP
-#    depends_on:
-#      - redis
-#    <<: *xhosts
+  php74:
+    build:
+      context: ./php/7.4
+    ports:
+      - "1238:1238"
+      - "9501:9501"
+      - "9502:9502"
+      - "9508:9508"
+    environment:
+      TZ: $TIMEZONE
+    restart: always
+    volumes:
+      - ./php/7.4/config/php.ini:/usr/local/etc/php/php.ini
+      - ./php/7.4/config/php-fpm.conf:/usr/local/etc/php-fpm.conf
+      - ./php/7.4/config/php-fpm.d:/usr/local/etc/php-fpm.d
+      - ./log/php74:/var/log/php-fpm
+      - ./www:/home/www
+    container_name: php74
+    # network_mode: "host"
+    networks:
+     my_network:
+       ipv4_address: $PHP74_IP
+    depends_on:
+      - redis
+    <<: *xhosts
 
   nginx:
     build:
@@ -73,10 +74,10 @@ services:
       - ./nginx/conf.d:/etc/nginx/conf.d
     container_name: nginx
     networks:
-      my_network:
-        ipv4_address: $NGINX_IP
-#    depends_on:
-#      - php74
+     my_network:
+       ipv4_address: $NGINX_IP
+    # depends_on:
+    #   - php74
     <<: *xhosts
 
   redis:
@@ -89,8 +90,8 @@ services:
       TZ: $TIMEZONE
     container_name: redis
     networks:
-      my_network:
-        ipv4_address: $REDIS_IP
+     my_network:
+       ipv4_address: $REDIS_IP
     volumes:
       - ./redis/config/redis.conf/:/usr/local/etc/redis/redis.conf
       - ./redis/data:/usr/local/redis/data

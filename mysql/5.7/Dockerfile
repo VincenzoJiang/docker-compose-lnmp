@@ -1,1 +1,1 @@
-FROM mysql:5.7
+FROM crpi-d0x3buemxmymp6j4.cn-guangzhou.personal.cr.aliyuncs.com/vincenzo_jiang/mysql:57
