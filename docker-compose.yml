@@ -131,6 +131,18 @@ services:
       my_network:
         ipv4_address: $RABBITMQ_IP
 
+  rocketmq:
+    build: ./mq/rocketMQ
+    ports:
+      - "9876:9876"
+    restart: always
+    environment:
+      TZ: $TIMEZONE
+      container_name: rocketmq
+    networks:
+      my_network:
+        ipv4_address: $ROCKETMQ_IP
+
   memcached:
     build: ./memcached
     ports:

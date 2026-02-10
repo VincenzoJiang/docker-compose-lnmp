@@ -1,6 +1,6 @@
 FROM crpi-d0x3buemxmymp6j4.cn-guangzhou.personal.cr.aliyuncs.com/vincenzo_jiang/php:php73
-# RUN mkdir -p /home && mkdir -p /home/www
-# WORKDIR /home/www
+RUN mkdir -p /home && mkdir -p /home/www
+RUN WORKDIR /home/www
 
 
 #composer
