@@ -3,11 +3,14 @@ version: '3.3'
 x-hosts: &xhosts
   extra_hosts:
     - "mysql57:$MYSQL57_IP"
+    - "mysql8:$MYSQL8_IP"
     - "php73:$PHP73_IP"
     - "php74:$PHP74_IP"
     - "redis:$REDIS_IP"
     - "rabbit:$RABBITMQ_IP"
+    - "rocket:$ROCKETMQ_IP"
     - "memcached:$MEMCACHED_IP"
+    - "rocketServer:$ROCKETMQ_SERVER_IP"
 
 services:
   php73:
@@ -62,8 +65,8 @@ services:
       context: ./nginx
     ports:
       - "80:80"
-      - "8080:8080"
-      - "8012:8012"
+      # - "8080:8080"
+      # - "8012:8012"
     restart: always
     environment:
       TZ: $TIMEZONE
@@ -131,17 +134,70 @@ services:
       my_network:
         ipv4_address: $RABBITMQ_IP
 
-  rocketmq:
+  mysql8:
+    build: ./mysql/8
+    ports:
+      - "33066:3306"
+    volumes:
+      - ./mysql/8/data:/var/lib/mysql
+      - ./mysql/8/my.cnf:/etc/my.cnf
+    environment:
+      TZ: $TIMEZONE
+      MYSQL_ROOT_PASSWORD: $MYSQL_PASSWORD
+    networks:
+      my_network:
+        ipv4_address: $MYSQL8_IP
+    restart: always
+    container_name: mysql8
+
+  # rocketmq:
+  #   build: ./mq/rocketMQ
+  #   ports:
+  #     - "8090:8080"
+  #     - "8091:8081"
+  #     - "9876:9876"
+  #   restart: always
+  #   environment:
+  #     TZ: $TIMEZONE
+  #     container_name: rocketmq
+  #   networks:
+  #     my_network:
+  #       ipv4_address: $ROCKETMQ_IP
+
+
+  rocketmq-broker:
+    build: ./mq/rocketMQ
+    container_name: rocketmq-broker
+    ports:
+      - "10912:10912"
+      - "10911:10911"
+      - "10909:10909"
+      - "8090:8080"
+      - "8091:8081"
+    environment:
+      - NAMESRV_ADDR=rocketmq-server:9876
+    volumes:
+      - ./mq/rocketMQ/broker.conf:/home/rocketmq/rocketmq-5.3.2/conf/broker.conf
+    command: sh mqbroker --enable-proxy -c /home/rocketmq/rocketmq-5.3.2/conf/broker.conf
+    networks:
+      my_network:
+        ipv4_address: $ROCKETMQ_BROKER_IP
+    depends_on:
+      - rocketmq-server
+
+
+  rocketmq-server:
     build: ./mq/rocketMQ
     ports:
       - "9876:9876"
     restart: always
-    environment:
-      TZ: $TIMEZONE
-      container_name: rocketmq
+    container_name: rocketmq-server
     networks:
       my_network:
-        ipv4_address: $ROCKETMQ_IP
+        ipv4_address: $ROCKETMQ_SERVER_IP
+    command: sh mqnamesrv
+    restart: unless-stopped
+
 
   memcached:
     build: ./memcached
