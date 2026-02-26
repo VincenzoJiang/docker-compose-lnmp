@@ -1,4 +1,5 @@
 www/
 log/
 mysql/5.7/data/
+mysql/8/data/
 nginx/conf.d/
