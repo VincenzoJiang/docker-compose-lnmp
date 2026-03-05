@@ -4,35 +4,58 @@ x-hosts: &xhosts
   extra_hosts:
     - "mysql57:$MYSQL57_IP"
     - "mysql8:$MYSQL8_IP"
-    - "php73:$PHP73_IP"
+    - "php83:$PHP_IP"
+    # - "php73:$PHP73_IP"
     - "php74:$PHP74_IP"
     - "redis:$REDIS_IP"
     - "rabbit:$RABBITMQ_IP"
-    - "rocket:$ROCKETMQ_IP"
+    # - "rocket:$ROCKETMQ_IP"
     - "memcached:$MEMCACHED_IP"
     - "rocketServer:$ROCKETMQ_SERVER_IP"
 
 services:
-  php73:
+  php83:
     build:
-      context: ./php/7.3
+      context: ./php/8.3
     environment:
       TZ: $TIMEZONE
     restart: always
     volumes:
-      - ./php/7.3/config/php.ini:/usr/local/etc/php/php.ini
-      - ./php/7.3/config/php-fpm.conf:/usr/local/etc/php-fpm.conf
-      - ./php/7.3/config/php-fpm.d:/usr/local/etc/php-fpm.d
-      - ./php/7.3/sources.list:/etc/apt/sources.list
-      - ./log/php73:/var/log/php-fpm
+      - ./php/8.3/config/php.ini:/usr/local/etc/php/php.ini
+      - ./php/8.3/config/php-fpm.conf:/usr/local/etc/php-fpm.conf
+      - ./php/8.3/config/php-fpm.d:/usr/local/etc/php-fpm.d
+      # - ./php/8.3/sources.list:/etc/apt/sources.list
+      - ./log/php83:/var/log/php-fpm
       - ./www:/home/www
-    container_name: php73
+    container_name: php83
+    command: php-fpm
     networks:
      my_network:
-       ipv4_address: $PHP73_IP
+       ipv4_address: $PHP_IP
     depends_on:
       - redis
     <<: *xhosts
+
+  # php73:
+  #   build:
+  #     context: ./php/7.3
+  #   environment:
+  #     TZ: $TIMEZONE
+  #   restart: always
+  #   volumes:
+  #     - ./php/7.3/config/php.ini:/usr/local/etc/php/php.ini
+  #     - ./php/7.3/config/php-fpm.conf:/usr/local/etc/php-fpm.conf
+  #     - ./php/7.3/config/php-fpm.d:/usr/local/etc/php-fpm.d
+  #     - ./php/7.3/sources.list:/etc/apt/sources.list
+  #     - ./log/php73:/var/log/php-fpm
+  #     - ./www:/home/www
+  #   container_name: php73
+  #   networks:
+  #    my_network:
+  #      ipv4_address: $PHP73_IP
+  #   depends_on:
+  #     - redis
+  #   <<: *xhosts
 
   php74:
     build:
@@ -52,7 +75,6 @@ services:
       - ./log/php74:/var/log/php-fpm
       - ./www:/home/www
     container_name: php74
-    # network_mode: "host"
     networks:
      my_network:
        ipv4_address: $PHP74_IP
@@ -165,38 +187,38 @@ services:
   #       ipv4_address: $ROCKETMQ_IP
 
 
-  rocketmq-broker:
-    build: ./mq/rocketMQ
-    container_name: rocketmq-broker
-    ports:
-      - "10912:10912"
-      - "10911:10911"
-      - "10909:10909"
-      - "8090:8080"
-      - "8091:8081"
-    environment:
-      - NAMESRV_ADDR=rocketmq-server:9876
-    volumes:
-      - ./mq/rocketMQ/broker.conf:/home/rocketmq/rocketmq-5.3.2/conf/broker.conf
-    command: sh mqbroker --enable-proxy -c /home/rocketmq/rocketmq-5.3.2/conf/broker.conf
-    networks:
-      my_network:
-        ipv4_address: $ROCKETMQ_BROKER_IP
-    depends_on:
-      - rocketmq-server
+  # rocketmq-broker:
+  #   build: ./mq/rocketMQ
+  #   container_name: rocketmq-broker
+  #   ports:
+  #     - "10912:10912"
+  #     - "10911:10911"
+  #     - "10909:10909"
+  #     - "8090:8080"
+  #     - "8091:8081"
+  #   environment:
+  #     - NAMESRV_ADDR=rocketmq-server:9876
+  #   volumes:
+  #     - ./mq/rocketMQ/broker.conf:/home/rocketmq/rocketmq-5.3.2/conf/broker.conf
+  #   command: sh mqbroker --enable-proxy -c /home/rocketmq/rocketmq-5.3.2/conf/broker.conf
+  #   networks:
+  #     my_network:
+  #       ipv4_address: $ROCKETMQ_BROKER_IP
+  #   depends_on:
+  #     - rocketmq-server
 
 
-  rocketmq-server:
-    build: ./mq/rocketMQ
-    ports:
-      - "9876:9876"
-    restart: always
-    container_name: rocketmq-server
-    networks:
-      my_network:
-        ipv4_address: $ROCKETMQ_SERVER_IP
-    command: sh mqnamesrv
-    restart: unless-stopped
+  # rocketmq-server:
+  #   build: ./mq/rocketMQ
+  #   ports:
+  #     - "9876:9876"
+  #   restart: always
+  #   container_name: rocketmq-server
+  #   networks:
+  #     my_network:
+  #       ipv4_address: $ROCKETMQ_SERVER_IP
+  #   command: sh mqnamesrv
+  #   restart: unless-stopped
 
 
   memcached:
